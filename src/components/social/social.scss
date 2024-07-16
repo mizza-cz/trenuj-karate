@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: auto;
+  gap: 24px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    height: 24px;
+    width: 24px;
+    &:hover {
+      transform: scale(1.1);
+    }
+    path {
+      transition: all 0.3s;
+    }
+    svg {
+      object-fit: contain;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

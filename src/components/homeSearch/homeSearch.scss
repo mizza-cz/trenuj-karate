@@ -31,7 +31,7 @@
     height: fit-content;
   }
   &__inner {
-    max-width: 720px;
+    max-width: 920px;
     margin: 0 auto;
     @include media-breakpoint-down(lg) {
       max-width: 360px;

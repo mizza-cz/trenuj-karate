@@ -1,0 +1,87 @@
+.partners-section {
+  margin-bottom: 160px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 160px;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 100px;
+    padding-top: 120px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 600px;
+    height: 950px;
+    top: -720px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/content/bg-left-blue.png");
+    @include media-breakpoint-down(lg) {
+      top: -740px;
+    }
+  }
+  .h2 {
+    margin-bottom: 56px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    gap: 24px 0;
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-down(md) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 20px;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+    li {
+      max-width: 16.666%;
+      flex: 0 0 16.666%;
+      padding: 0 12px;
+      @include media-breakpoint-only(xl) {
+        max-width: 20%;
+        flex: 0 0 20%;
+      }
+      @include media-breakpoint-only(lg) {
+        max-width: 20%;
+        flex: 0 0 20%;
+      }
+      @include media-breakpoint-only(md) {
+        max-width: 25%;
+        flex: 0 0 25%;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: none;
+        flex: none;
+        padding: 0 4px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    border: 1px solid var(--color-gray);
+    height: 100%;
+    padding: 24px;
+    transition: all 0.3s;
+    @include media-breakpoint-down(md) {
+      padding: 16px 24px;
+    }
+    &:hover {
+      border: 1px solid var(--color-primary);
+    }
+    img {
+      height: 60px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

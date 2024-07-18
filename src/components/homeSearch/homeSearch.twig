@@ -1,0 +1,23 @@
+<section class="homeSearch">
+  <div class="container">
+    <div class="homeSearch__inner">
+      <div class="homeSearch__box">
+        <h1 class="h1 text-center">Vyhledejte klub ve vašem okolí</h1>
+        <form class="homeSearch__form">
+          <label class="homeSearch__label">
+            <button>{% include "@images/search.svg" %}</button>
+            <input type="text" placeholder="Vyhledejte klub podle města.... " />
+          </label>
+        </form>
+        <div class="homeSearch__location">
+          <button id="find-me">
+            {% include "@images/cursor.svg" %} Použít aktuální polohu
+          </button>
+          <p id="status"></p>
+          <a id="map-link" target="_blank"></a>
+        </div>
+        <a href="#" class="btn btn-primary mx-auto">Vyhledat</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,9 +1,8 @@
-{% extends "@components/base/base.twig" %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/homeSearch/homeSearch.twig" %}
 
-{% set title = "01.0_homepage" %}
-
-{% block main %}
-
-Hello, World!
-
-{% endblock %}
+<div class="map-wrapper">
+  <div class="map" id="map-canvas"></div>
+</div>
+{% include "@components/partners-section/partners-section.twig" %} {% endblock
+%}

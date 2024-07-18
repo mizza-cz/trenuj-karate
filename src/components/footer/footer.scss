@@ -1,0 +1,118 @@
+.footer {
+  position: relative;
+  padding-top: 80px;
+  background-color: var(--color-extra-light);
+  padding-bottom: 64px;
+  overflow: hidden;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &::after {
+    width: 24rem;
+    height: 27.8125rem;
+    right: -40px;
+    bottom: 0;
+    background-image: url("../images/content/footer-blue.png");
+    @include media-breakpoint-down(lg) {
+      width: 10.75rem;
+      height: 12.5rem;
+    }
+  }
+  &::before {
+    left: -0px;
+    bottom: 0;
+    background-image: url("../images/content/footer-red.png");
+    width: 742px;
+    height: 400px;
+    @include media-breakpoint-down(lg) {
+      width: 400px;
+      height: 200px;
+    }
+    @include media-breakpoint-down(sm) {
+      left: -20px;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__social {
+    margin-bottom: 64px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 48px;
+    }
+  }
+  &__logos {
+    display: flex;
+    justify-content: center;
+    gap: 132px;
+    margin-bottom: 48px;
+    @include media-breakpoint-down(lg) {
+      gap: 72px;
+    }
+  }
+  &__logo {
+    height: 40px;
+    width: 96px;
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__hockeyLogo {
+    height: 40px;
+    width: 131px;
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15.6px;
+      letter-spacing: -0.02em;
+      text-decoration-color: transparent;
+      color: var(--color-action-primary);
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+  gap: 12px;
+
+  img {
+    height: 21px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 4px;
+  }
+}

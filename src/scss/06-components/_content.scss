@@ -11,3 +11,29 @@
     margin-bottom: 0;
   }
 }
+
+.o-content h1,
+.h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 81px;
+  letter-spacing: -0.02em;
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  @include media-breakpoint-down(lg) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+.p1 {
+  font-size: 18px;
+  line-height: 27px;
+}

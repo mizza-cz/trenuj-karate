@@ -1,0 +1,108 @@
+.homeSearch {
+  height: calc(100vh - 65.5px);
+  position: relative;
+  padding-top: 12%;
+  overflow: hidden;
+  @include media-breakpoint-down(lg) {
+    padding-top: 120px;
+    height: auto;
+    padding-bottom: 120px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    right: -210px;
+    top: -530px;
+    background-image: url("../images/content/bg-topsection-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 670px;
+    height: 960px;
+
+    @include media-breakpoint-down(xxl) {
+      width: 35rem;
+    }
+    @include media-breakpoint-down(lg) {
+      height: 46rem;
+      right: -19rem;
+    }
+  }
+  &__box {
+    height: fit-content;
+  }
+  &__inner {
+    max-width: 720px;
+    margin: 0 auto;
+    @include media-breakpoint-down(lg) {
+      max-width: 360px;
+    }
+    .h1 {
+      margin-bottom: 64px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 54px;
+      }
+    }
+  }
+  &__location {
+    justify-content: center;
+    margin: 0 auto 32px;
+    text-align: center;
+
+    button {
+      border: none;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      margin: 0 auto;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+  &__form {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
+  }
+  &__label {
+    width: 100%;
+    position: relative;
+    height: 56px;
+    display: block;
+    input {
+      border: 1px solid var(--color-gray);
+      border-radius: 12px;
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding-left: 48px;
+      padding-right: 24px;
+      &::placeholder {
+        color: var(--color-text-secondary);
+      }
+    }
+    button {
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      border: none;
+      background: transparent;
+      z-index: 2;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

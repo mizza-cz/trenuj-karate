@@ -8,9 +8,9 @@
 	<meta name="format-detection" content="telephone=no" />
 
 	<!-- fonts  -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 	<!-- fonts  end-->
 
 	<link rel="preload" href="css/styles.css" as="style" />
@@ -88,15 +88,159 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			Hello, World!
+			<section class="homeSearch">
+				<div class="container">
+					<div class="homeSearch__inner">
+						<div class="homeSearch__box">
+							<h1 class="h1 text-center">Vyhledejte klub ve vašem okolí</h1>
+							<form class="homeSearch__form">
+								<label class="homeSearch__label">
+									<button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14.15 14.06L20 19.99M14.193 5.582a5.971 5.971 0 11-8.444 8.444 5.971 5.971 0 018.444-8.444z" stroke="#B7AEAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg></button>
+									<input type="text" placeholder="Vyhledejte klub podle města.... " />
+								</label>
+							</form>
+							<div class="homeSearch__location">
+								<button id="find-me">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path clip-rule="evenodd" d="M13.482 13.482l-1.145 2.863a.591.591 0 01-1.105-.018L8.753 9.511a.591.591 0 01.758-.758l6.816 2.478c.51.186.522.903.018 1.105l-2.863 1.146z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<circle cx="12" cy="12" r="9" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> Použít aktuální polohu
+								</button>
+								<p id="status"></p>
+								<a id="map-link" target="_blank"></a>
+							</div>
+							<a href="#" class="btn btn-primary mx-auto">Vyhledat</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<div class="map-wrapper">
+				<div class="map" id="map-canvas"></div>
+			</div>
+			<section class="partners-section">
+				<div class="container">
+					<h2 class="h2 text-center">Partneři</h2>
+					<ul class="partners-section__inner">
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+						<li>
+							<a href="#" class="partners-section__item">
+								<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__logos">
+						<a href="#" class="footer__logo">
+							<img src="images/ico/logo.svg" alt="logo" />
+						</a>
+						<a href="#" class="footer__hockeyLogo">
+							<img src="images/ico/footer-logo.svg" alt="karate" />
+						</a>
+					</div>
+					<div class="footer__social">
+						<ul class="social">
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path clip-rule="evenodd" d="M7.496 3h9.009A4.495 4.495 0 0121 7.496v9.009A4.495 4.495 0 0116.504 21H7.496A4.495 4.495 0 013 16.504V7.496A4.495 4.495 0 017.496 3v0z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.949 6.713a.338.338 0 10.002.674.338.338 0 00-.002-.674M14.546 9.454a3.6 3.6 0 11-5.092 5.092 3.6 3.6 0 015.092-5.092" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.75 11.5h4.5M14.25 7.5h-1a2 2 0 00-2 2v7" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<rect x="3" y="3" width="18" height="18" rx="5" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> </a>
+							</li>
 
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path clip-rule="evenodd" d="M21.583 6.373c-.229-1.004-.907-1.796-1.769-2.068C18.255 3.818 12 3.818 12 3.818s-6.252 0-7.814.487c-.859.268-1.537 1.06-1.769 2.068C2 8.195 2 12 2 12s0 3.805.417 5.627c.229 1.004.907 1.796 1.769 2.068 1.562.487 7.814.487 7.814.487s6.255 0 7.814-.487c.859-.268 1.537-1.06 1.769-2.068C22 15.805 22 12 22 12s0-3.805-.417-5.627z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path clip-rule="evenodd" d="M10.002 15l5.196-3-5.196-3v6z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> </a>
+							</li>
+						</ul>
+					</div>
+					<ul class="footer__list">
+						<li>
+							<a href="#">Národní sportovní agentura</a>
+						</li>
+						<li>
+							<a href="#">Česká unie sportu</a>
+						</li>
+						<li>
+							<a href="#">Olympijský výbor ČR</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						Vyrobeno v
+						<a href="https://esportsmedia.cz/" target="_blank">
+							<img src="images/ico/esports.svg" alt="esports" />
+						</a>
+						v roce 2022
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyA2RuMD-MPiJRwsbRXtdcgDWazMieuVCWY"></script>
 	<script defer src="js/scripts.js"></script>
 </body>
 

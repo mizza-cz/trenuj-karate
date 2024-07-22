@@ -1,0 +1,23 @@
+.main {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -210px;
+    top: -530px;
+    background-image: url("../images/content/bg-topsection-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 670px;
+    height: 960px;
+
+    @include media-breakpoint-down(xxl) {
+      width: 35rem;
+    }
+    @include media-breakpoint-down(lg) {
+      height: 46rem;
+      right: -19rem;
+    }
+  }
+}

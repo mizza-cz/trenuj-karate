@@ -8,25 +8,7 @@
     height: auto;
     padding-bottom: 120px;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    right: -210px;
-    top: -530px;
-    background-image: url("../images/content/bg-topsection-2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 670px;
-    height: 960px;
 
-    @include media-breakpoint-down(xxl) {
-      width: 35rem;
-    }
-    @include media-breakpoint-down(lg) {
-      height: 46rem;
-      right: -19rem;
-    }
-  }
   &__box {
     height: fit-content;
   }
@@ -83,7 +65,11 @@
       height: 100%;
       width: 100%;
       padding-left: 48px;
-      padding-right: 24px;
+      padding-right: 40px;
+
+      font-size: 14px;
+      line-height: 21px;
+
       &::placeholder {
         color: var(--color-text-secondary);
       }
@@ -104,5 +90,14 @@
         height: 24px;
       }
     }
+  }
+  &__close {
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    display: block;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
   }
 }

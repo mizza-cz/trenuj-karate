@@ -1,0 +1,18 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-action-primary);
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-color: transparent;
+
+  &:hover {
+    text-decoration-color: inherit;
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+  }
+}

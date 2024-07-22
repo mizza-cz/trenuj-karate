@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>02.0_club-detail - Název projektu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!-- fonts  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+	<!-- fonts  end-->
+
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+
+	<!-- favicon -->
+
+	<!-- favicon end-->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="logo">
+						<img src="images/ico/logo.svg" alt="logo" />
+					</a>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<nav class="navbar">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#"> Proč karate </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Info o projektu </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#"> České karate </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#"> Registrace klubu </a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__social">
+							<ul class="social">
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path clip-rule="evenodd" d="M7.496 3h9.009A4.495 4.495 0 0121 7.496v9.009A4.495 4.495 0 0116.504 21H7.496A4.495 4.495 0 013 16.504V7.496A4.495 4.495 0 017.496 3v0z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M16.949 6.713a.338.338 0 10.002.674.338.338 0 00-.002-.674M14.546 9.454a3.6 3.6 0 11-5.092 5.092 3.6 3.6 0 015.092-5.092" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg> </a>
+								</li>
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.75 11.5h4.5M14.25 7.5h-1a2 2 0 00-2 2v7" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<rect x="3" y="3" width="18" height="18" rx="5" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg> </a>
+								</li>
+
+								<li class="social__item">
+									<a target="_blank" class="social__link" href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path clip-rule="evenodd" d="M21.583 6.373c-.229-1.004-.907-1.796-1.769-2.068C18.255 3.818 12 3.818 12 3.818s-6.252 0-7.814.487c-.859.268-1.537 1.06-1.769 2.068C2 8.195 2 12 2 12s0 3.805.417 5.627c.229 1.004.907 1.796 1.769 2.068 1.562.487 7.814.487 7.814.487s6.255 0 7.814-.487c.859-.268 1.537-1.06 1.769-2.068C22 15.805 22 12 22 12s0-3.805-.417-5.627z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											<path clip-rule="evenodd" d="M10.002 15l5.196-3-5.196-3v6z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg> </a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="hockeyLogo">
+							<img src="images/ico/logo-karate.svg" alt="karate logo" />
+						</a>
+					</div>
+					<button class="c-header__opener js-header__opener" type="button">
+						Menu
+
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="clubDetail">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-sm-10 mx-auto">
+							<div class="clubDetail__inner">
+								<a href="#" class="link mb-4">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.333 8h9.334M6.667 4.667L3.334 8M6.667 11.333L3.334 8" stroke="#00308C" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> Zpět na vyhledávání</a>
+								<div class="clubDetail__social mb-3">
+									<a href="#" class="clubDetail__logo">
+										<img src="images/ico/logo-detail.svg" alt="logo" />
+									</a>
+									<ul class="social">
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path clip-rule="evenodd" d="M7.496 3h9.009A4.495 4.495 0 0121 7.496v9.009A4.495 4.495 0 0116.504 21H7.496A4.495 4.495 0 013 16.504V7.496A4.495 4.495 0 017.496 3v0z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M16.949 6.713a.338.338 0 10.002.674.338.338 0 00-.002-.674M14.546 9.454a3.6 3.6 0 11-5.092 5.092 3.6 3.6 0 015.092-5.092" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> </a>
+										</li>
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M9.75 11.5h4.5M14.25 7.5h-1a2 2 0 00-2 2v7" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<rect x="3" y="3" width="18" height="18" rx="5" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> </a>
+										</li>
+
+										<li class="social__item">
+											<a target="_blank" class="social__link" href="#">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path clip-rule="evenodd" d="M21.583 6.373c-.229-1.004-.907-1.796-1.769-2.068C18.255 3.818 12 3.818 12 3.818s-6.252 0-7.814.487c-.859.268-1.537 1.06-1.769 2.068C2 8.195 2 12 2 12s0 3.805.417 5.627c.229 1.004.907 1.796 1.769 2.068 1.562.487 7.814.487 7.814.487s6.255 0 7.814-.487c.859-.268 1.537-1.06 1.769-2.068C22 15.805 22 12 22 12s0-3.805-.417-5.627z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path clip-rule="evenodd" d="M10.002 15l5.196-3-5.196-3v6z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> </a>
+										</li>
+									</ul>
+								</div>
+								<h1 class="h1 mb-3">Centrum karate Praha</h1>
+								<ul class="tags mb-4">
+									<li>
+										<a class="tag" href="#"> Mládež </a>
+									</li>
+									<li>
+										<a class="tag" href="#"> Dospělí </a>
+									</li>
+									<li>
+										<a class="tag" href="#"> Senioři </a>
+									</li>
+								</ul>
+								<p class="p3 mb-3">IČO: 32913238</p>
+								<p class="p3 mb-3">
+									Náš klub je aktivním členem České asociace tradičního karate,
+									umožňující start na národních a mezinárodních turnajích. Nabízíme
+									pravidelné zkoušky technické vyspělosti, semináře s legendami karate
+									a školení trenérů.
+								</p>
+								<a class="btn btn-primary mt-32" href="#">Nábor</a>
+							</div>
+
+							<div class="clubDetail__contacts">
+								<h2 class="h5 mb-4">Kontakty</h2>
+								<div class="row g-4">
+									<div class="col-md-6">
+										<ul class="clubDetail__contacts-list">
+											<li>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20 20v-.75A4.25 4.25 0 0015.75 15h-7.5A4.25 4.25 0 004 19.25V20" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<circle cx="12" cy="7" r="4" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> Hlavní trenér:
+												<strong>Jakub Štěpán</strong>
+											</li>
+											<li>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path clip-rule="evenodd" d="M10.856 13.144a12.635 12.635 0 01-2.638-3.809.749.749 0 01.166-.827l.82-.818c.67-.671.67-1.62.084-2.206L8.114 4.31a2 2 0 00-2.828 0l-.652.652c-.74.741-1.05 1.81-.85 2.87.494 2.613 2.012 5.474 4.461 7.923 2.45 2.449 5.31 3.967 7.923 4.461 1.06.2 2.13-.109 2.87-.85l.651-.651a2 2 0 000-2.828l-1.173-1.173a1.5 1.5 0 00-2.12 0l-.904.904a.749.749 0 01-.827.166 12.66 12.66 0 01-3.809-2.64z" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> Telefon:
+												<strong><a href="tel:+420725053018">+420 725 053 018</a></strong>
+											</li>
+
+											<li>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path clip-rule="evenodd" d="M3 6.8v0c0 .6.3 1.1.8 1.5l6 4.1c1.4.9 3.1.9 4.5 0l6-4c.4-.5.7-1 .7-1.6v0c0-1-.8-1.8-1.8-1.8H4.8C3.8 5 3 5.8 3 6.8z" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M3 7v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7M3.588 18.412l6.094-6.094M14.36 12.36l6.052 6.052" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>Email:
+												<strong><a href="mailto:step.kub@seznam.cz">step.kub@seznam.cz</a></strong>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul class="clubDetail__contacts-list">
+											<li>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20 20v-.75A4.25 4.25 0 0015.75 15h-7.5A4.25 4.25 0 004 19.25V20" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<circle cx="12" cy="7" r="4" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> Asistent trenéra:
+												<strong>Jakub Štěpán</strong>
+											</li>
+											<li>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path clip-rule="evenodd" d="M10.856 13.144a12.635 12.635 0 01-2.638-3.809.749.749 0 01.166-.827l.82-.818c.67-.671.67-1.62.084-2.206L8.114 4.31a2 2 0 00-2.828 0l-.652.652c-.74.741-1.05 1.81-.85 2.87.494 2.613 2.012 5.474 4.461 7.923 2.45 2.449 5.31 3.967 7.923 4.461 1.06.2 2.13-.109 2.87-.85l.651-.651a2 2 0 000-2.828l-1.173-1.173a1.5 1.5 0 00-2.12 0l-.904.904a.749.749 0 01-.827.166 12.66 12.66 0 01-3.809-2.64z" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg> Telefon:
+												<strong><a href="tel:+420725053018">+420 725 053 018</a></strong>
+											</li>
+											<li>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path clip-rule="evenodd" d="M3 6.8v0c0 .6.3 1.1.8 1.5l6 4.1c1.4.9 3.1.9 4.5 0l6-4c.4-.5.7-1 .7-1.6v0c0-1-.8-1.8-1.8-1.8H4.8C3.8 5 3 5.8 3 6.8z" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M3 7v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7M3.588 18.412l6.094-6.094M14.36 12.36l6.052 6.052" stroke="#001F63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>Email:
+												<strong><a href="mailto:iveta.dusilova@gmail.com">iveta.dusilova@gmail.com</a></strong>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="btn btn-secondary mt-32">Přejít na web</a>
+							</div>
+							<div class="clubDetail__items">
+								<h3 class="h5">Adresa tréninků a časy</h3>
+								<div class="row g-4 mt-0">
+									<div class="col-md-6">
+										<div class="clubItem">
+											<a href="#" class="clubItem__img">
+												<img src="images/content/detail.png" loading="lazy" alt="item" />
+											</a>
+											<div class="clubItem__info">
+												<ul class="tags mb-3">
+													<li>
+														<a class="tag" href="#"> Mládež </a>
+													</li>
+													<li>
+														<a class="tag" href="#"> Dospělí </a>
+													</li>
+													<li>
+														<a class="tag" href="#"> Senioři </a>
+													</li>
+												</ul>
+												<p class="fw-bold mb-3">Nad Kapličkou 15, Praha 10</p>
+												<p class="mb-2">Tréninky:</p>
+
+												<ul class="clubItem__time">
+													<li>Po: 8:00 - 10:00</li>
+													<li>Út: 8:00 - 10:00</li>
+													<li>St: 8:00 - 10:00</li>
+													<li>Čt: 8:00 - 10:00</li>
+													<li>Pá: 8:00 - 10:00</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="clubItem">
+											<a href="#" class="clubItem__img">
+												<img src="images/content/detail.png" loading="lazy" alt="item" />
+											</a>
+											<div class="clubItem__info">
+												<ul class="tags mb-3">
+													<li>
+														<a class="tag" href="#"> Mládež </a>
+													</li>
+													<li>
+														<a class="tag" href="#"> Dospělí </a>
+													</li>
+													<li>
+														<a class="tag" href="#"> Senioři </a>
+													</li>
+												</ul>
+												<p class="fw-bold mb-3">Nad Kapličkou 15, Praha 10</p>
+												<p class="mb-2">Tréninky:</p>
+
+												<ul class="clubItem__time">
+													<li>Po: 8:00 - 10:00</li>
+													<li>Út: 8:00 - 10:00</li>
+													<li>St: 8:00 - 10:00</li>
+													<li>Čt: 8:00 - 10:00</li>
+													<li>Pá: 8:00 - 10:00</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="clubItem">
+											<a href="#" class="clubItem__img">
+												<img src="images/content/detail.png" loading="lazy" alt="item" />
+											</a>
+											<div class="clubItem__info">
+												<ul class="tags mb-3">
+													<li>
+														<a class="tag" href="#"> Mládež </a>
+													</li>
+													<li>
+														<a class="tag" href="#"> Dospělí </a>
+													</li>
+													<li>
+														<a class="tag" href="#"> Senioři </a>
+													</li>
+												</ul>
+												<p class="fw-bold mb-3">Nad Kapličkou 15, Praha 10</p>
+												<p class="mb-2">Tréninky:</p>
+
+												<ul class="clubItem__time">
+													<li>Po: 8:00 - 10:00</li>
+													<li>Út: 8:00 - 10:00</li>
+													<li>St: 8:00 - 10:00</li>
+													<li>Čt: 8:00 - 10:00</li>
+													<li>Pá: 8:00 - 10:00</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__logos">
+						<a href="#" class="footer__logo">
+							<img src="images/ico/logo.svg" alt="logo" />
+						</a>
+						<a href="#" class="footer__hockeyLogo">
+							<img src="images/ico/footer-logo.svg" alt="karate" />
+						</a>
+					</div>
+					<div class="footer__social">
+						<ul class="social">
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path clip-rule="evenodd" d="M7.496 3h9.009A4.495 4.495 0 0121 7.496v9.009A4.495 4.495 0 0116.504 21H7.496A4.495 4.495 0 013 16.504V7.496A4.495 4.495 0 017.496 3v0z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.949 6.713a.338.338 0 10.002.674.338.338 0 00-.002-.674M14.546 9.454a3.6 3.6 0 11-5.092 5.092 3.6 3.6 0 015.092-5.092" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> </a>
+							</li>
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.75 11.5h4.5M14.25 7.5h-1a2 2 0 00-2 2v7" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<rect x="3" y="3" width="18" height="18" rx="5" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> </a>
+							</li>
+
+							<li class="social__item">
+								<a target="_blank" class="social__link" href="#">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path clip-rule="evenodd" d="M21.583 6.373c-.229-1.004-.907-1.796-1.769-2.068C18.255 3.818 12 3.818 12 3.818s-6.252 0-7.814.487c-.859.268-1.537 1.06-1.769 2.068C2 8.195 2 12 2 12s0 3.805.417 5.627c.229 1.004.907 1.796 1.769 2.068 1.562.487 7.814.487 7.814.487s6.255 0 7.814-.487c.859-.268 1.537-1.06 1.769-2.068C22 15.805 22 12 22 12s0-3.805-.417-5.627z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path clip-rule="evenodd" d="M10.002 15l5.196-3-5.196-3v6z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg> </a>
+							</li>
+						</ul>
+					</div>
+					<ul class="footer__list">
+						<li>
+							<a href="#">Národní sportovní agentura</a>
+						</li>
+						<li>
+							<a href="#">Česká unie sportu</a>
+						</li>
+						<li>
+							<a href="#">Olympijský výbor ČR</a>
+						</li>
+					</ul>
+					<div class="copyright">
+						Vyrobeno v
+						<a href="https://esportsmedia.cz/" target="_blank">
+							<img src="images/ico/esports.svg" alt="esports" />
+						</a>
+						v roce 2022
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<script src="https://maps.google.com/maps/api/js?key=AIzaSyA2RuMD-MPiJRwsbRXtdcgDWazMieuVCWY"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

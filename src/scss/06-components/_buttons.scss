@@ -13,6 +13,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  svg path {
+    transition: all 0.3s;
+  }
 }
 .btn-primary {
   background-color: var(--color-action-primary);
@@ -21,5 +25,18 @@
   &:hover {
     background-color: var(--color-light);
     color: var(--color-action-primary);
+  }
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-action-primary);
+  color: var(--color-action-primary);
+  background-color: var(--color-light);
+  &:hover {
+    background-color: var(--color-action-primary);
+    color: var(--color-light);
+    svg path {
+      stroke: var(--color-light);
+    }
   }
 }

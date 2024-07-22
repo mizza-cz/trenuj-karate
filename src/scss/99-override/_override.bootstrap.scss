@@ -6,4 +6,11 @@
 .text-red {
   color: var(--color-red);
 }
+.mt-32 {
+  margin-top: 32px;
+}
+.g-5 {
+  --bs-gutter-y: 40px;
+  --bs-gutter-x: 40px;
+}
 /*! purgecss end ignore */

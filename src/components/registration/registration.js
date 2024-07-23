@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // Функция добавления новых полей для социальных сетей
   function addFields(maxField, addButton, wrapper, fieldHTML) {
     let x = 1;
     $(addButton).click(function () {
@@ -18,7 +17,6 @@ $(document).ready(function () {
     });
   }
 
-  // Добавление полей для социальных сетей
   addFields(
     3,
     "#socialButton",
@@ -26,7 +24,6 @@ $(document).ready(function () {
     '<div class="registration__item"><input name="additionalSocial" type="text" class="registration__input" placeholder="Дополнительная социальная сеть" /></div>'
   );
 
-  // Добавление полей для тренингов
   addFields(
     2,
     "#clubButton",
@@ -34,15 +31,13 @@ $(document).ready(function () {
     '<div class="registration__item"><input name="trainingPlace" type="text" placeholder="Místo tréninků" class="registration__input" /><label for="trainingPlace2" class="registration__label">Místo tréninků</label></div><div class="registration__item"><input name="trainingTime" type="text" placeholder="Časy tréninků" class="registration__input" /><label for="trainingTime2" class="registration__label">Časy tréninků</label></div>'
   );
 
-  // Добавление полей для контактов
   addFields(
     2,
     "#contactsButton",
     ".registration__contacts",
-    '<div class="registration__item"><input name="name" type="text" placeholder="Имя" class="registration__input" /><label for="name2" class="registration__label">Имя</label></div><div class="registration__item"><input name="surname" type="text" placeholder="Фамилия" class="registration__input" /><label for="surname2" class="registration__label">Фамилия</label></div><div class="registration__item"><input name="position" type="text" placeholder="Позиция" class="registration__input" /><label for="postition2" class="registration__label">Позиция</label></div><div class="registration__item registration__item--small"><input name="tel" type="tel" placeholder="Телефон" class="registration__input" /><label for="telephon2" class="registration__label">Телефон</label></div><div class="registration__item registration__item--small"><input name="mail" type="email" placeholder="Email" class="registration__input" /><label for="mail2" class="registration__label">Email</label></div>'
+    '<div class="registration__item"><input name="name" type="text" placeholder="Jméno" class="registration__input" /><label for="name2" class="registration__label">Jméno</label></div><div class="registration__item"><input name="surname" type="text" placeholder="Příjmení" class="registration__input" /><label for="surname2" class="registration__label">Příjmení</label></div><div class="registration__item"><input name="position" type="text" placeholder="position" class="registration__input" /><label for="postition2" class="registration__label">position</label></div><div class="registration__item registration__item--small"><input name="tel" type="tel" placeholder="Telefonní číslo" class="registration__input" /><label for="telephon2" class="registration__label">Telefonní číslo</label></div><div class="registration__item registration__item--small"><input name="mail" type="email" placeholder="Email" class="registration__input" /><label for="mail2" class="registration__label">Email</label></div>'
   );
 
-  // Валидация формы
   let inputs = document.querySelectorAll("input");
   let buttonSend = document.getElementById("button-send");
 

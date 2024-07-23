@@ -4,6 +4,7 @@
   background-color: var(--color-extra-light);
   padding-bottom: 64px;
   overflow: hidden;
+  flex: 0 0 auto;
   &::after,
   &::before {
     content: "";

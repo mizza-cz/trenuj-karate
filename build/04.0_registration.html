@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>01.0_homepage - Název projektu</title>
+	<title>04.0_registration - Název projektu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -89,96 +89,139 @@
 				</div>
 			</header>
 			<main class="main" aria-label="Hlavní obsah">
-				<section class="homeSearch">
+				<section class="registration">
 					<div class="container">
-						<div class="homeSearch__inner">
-							<div class="homeSearch__box">
-								<h1 class="h1 text-center">
-									Vyhledejte klub pro <span class="text-red">začátečníky</span> ve vašem
-									okolí
-								</h1>
-								<form class="homeSearch__form">
-									<label class="homeSearch__label">
-										<button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M14.15 14.06L20 19.99M14.193 5.582a5.971 5.971 0 11-8.444 8.444 5.971 5.971 0 018.444-8.444z" stroke="#B7AEAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											</svg></button>
-										<input type="text" placeholder="Vyhledejte klub podle města.... " />
-									</label>
-								</form>
-								<div class="homeSearch__location">
-									<button id="find-me">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path clip-rule="evenodd" d="M13.482 13.482l-1.145 2.863a.591.591 0 01-1.105-.018L8.753 9.511a.591.591 0 01.758-.758l6.816 2.478c.51.186.522.903.018 1.105l-2.863 1.146z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											<circle cx="12" cy="12" r="9" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										</svg> Použít aktuální polohu
+						<div class="row">
+							<div class="col-md-8 col-sm-10 mx-auto">
+								<h1 class="h1">Registrace klubu</h1>
+								<form class="registration__form">
+									<div class="registration__item">
+										<input name="team" type="text" placeholder="Název klubu" class="registration__input" id="team" />
+										<label for="team" class="registration__label">Název klubu</label>
+									</div>
+									<div class="registration__item registration__item--small">
+										<input type="file" accept="image/jpg, image/png, image/svg" placeholder="Logo klubu (svg, png)" class="registration__input" id="file-upload" />
+										<label for="file-upload" class="custom-file-upload">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M15 13l-3-3-3 3" stroke="#999191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M8 20H7a4 4 0 01-4-4V7a4 4 0 014-4h10a4 4 0 014 4v9a4 4 0 01-4 4h-1M12 10v11" stroke="#999191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg> Logo klubu (svg, png)</label>
+									</div>
+									<div class="registration__item">
+										<input name="address" type="text" placeholder="Adresa" class="registration__input" id="address" />
+										<label for="address" class="registration__label">Adresa</label>
+									</div>
+									<div class="registration__item">
+										<input name="ico" type="text" placeholder="IČO" class="registration__input" id="ico" />
+										<label for="ico" class="registration__label">IČO</label>
+									</div>
+
+									<h2 class="h5">Klub</h2>
+									<div class="registration__club">
+										<div class="registration__item">
+											<input name="web" type="text" placeholder="Web" class="registration__input" id="web" />
+											<label for="web" class="registration__label">Web</label>
+										</div>
+										<div class="registration__item">
+											<input name="instagram" type="text" placeholder="Instagram" class="registration__input" id="instagram" />
+											<label for="instagram" class="registration__label">Instagram</label>
+										</div>
+										<div class="registration__item">
+											<input name="youtube" type="text" placeholder="Youtube" class="registration__input" id="youtube" />
+											<label for="youtube" class="registration__label">Youtube</label>
+										</div>
+										<div class="registration__item">
+											<input name="facebook" type="text" placeholder="Facebook" class="registration__input" id="facebook" />
+											<label for="facebook" class="registration__label">Facebook</label>
+										</div>
+										<a href="javascript:void(0);" id="socialButton" class="addButton"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 8v8M16 12H8" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path clip-rule="evenodd" d="M12 21v0a9 9 0 01-9-9v0a9 9 0 019-9v0a9 9 0 019 9v0a9 9 0 01-9 9z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg> Přidat další sociální síť</a>
+									</div>
+
+									<h3 class="h5">Tréninky</h3>
+									<div class="registration__training">
+										<div class="registration__item">
+											<input name="trainingPlace" type="text" placeholder="Místo tréninků" class="registration__input" id="trainingPlace" />
+											<label for="trainingPlace" class="registration__label">Místo tréninků</label>
+										</div>
+										<div class="registration__item">
+											<input name="trainingTime" type="text" placeholder="Časy tréninků" class="registration__input" id="trainingTime" />
+											<label for="trainingTime" class="registration__label">Časy tréninků</label>
+										</div>
+										<div class="registration__item">
+											<input name="trainingInfo" type="text" placeholder="Další informace o trénincích" class="registration__input" id="trainingInfo" />
+											<label for="trainingInfo" class="registration__label">Další informace o trénincích</label>
+										</div>
+										<p class="ps-4 mb-2 d-block">Pro koho jsou tréninky určené</p>
+										<ul class="registration__check">
+											<li class="">
+												<label class="label--checkbox">
+													<input name="youth" type="checkbox" class="registration__checkbox" />
+													Mládež
+												</label>
+											</li>
+											<li class="">
+												<label class="label--checkbox">
+													<input name="adults" type="checkbox" class="registration__checkbox" />
+													Dospělí
+												</label>
+											</li>
+											<li class="">
+												<label class="label--checkbox">
+													<input name="seniors" type="checkbox" class="registration__checkbox" />
+													Senioři
+												</label>
+											</li>
+										</ul>
+										<a href="javascript:void(0);" id="clubButton" class="addButton"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 8v8M16 12H8" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path clip-rule="evenodd" d="M12 21v0a9 9 0 01-9-9v0a9 9 0 019-9v0a9 9 0 019 9v0a9 9 0 01-9 9z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg> Přidat další místo a časy
+											tréninků</a>
+									</div>
+									<h4 class="h5">Konktaktní osoba</h4>
+									<div class="registration__contacts">
+										<div class="registration__item">
+											<input name="name" type="text" placeholder="Jméno" class="registration__input" id="name" />
+											<label for="name" class="registration__label">Jméno</label>
+										</div>
+										<div class="registration__item">
+											<input name="surname" type="text" placeholder="Příjmení" class="registration__input" id="surname" />
+											<label for="surname" class="registration__label">Příjmení</label>
+										</div>
+										<div class="registration__item">
+											<input name="position" type="text" placeholder="Pozice" class="registration__input" id="postition" />
+											<label for="postition" class="registration__label">Pozice</label>
+										</div>
+										<div class="registration__item registration__item--small">
+											<input name="tel" type="tel" placeholder="Telefonní číslo" class="registration__input" id="telephon" />
+											<label for="telephon" class="registration__label">Telefonní číslo</label>
+										</div>
+										<div class="registration__item registration__item--small">
+											<input name="mail" type="email" placeholder="Email" class="registration__input" id="mail" />
+											<label for="mail" class="registration__label">Email</label>
+										</div>
+
+										<a href="javascript:void(0);" id="contactsButton" class="addButton"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 8v8M16 12H8" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path clip-rule="evenodd" d="M12 21v0a9 9 0 01-9-9v0a9 9 0 019-9v0a9 9 0 019 9v0a9 9 0 01-9 9z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg> Přidat kontaktní osobu</a>
+									</div>
+
+									<div class="registration__agreement">
+										<label class="label--checkbox">
+											<input name="agreement" required type="checkbox" class="registration__checkbox" />
+											Souhlasím se zpracováním osobních údajů
+										</label>
+									</div>
+									<button name="submit" id="button-send" disabled class="btn btn-primary">
+										Odeslat
 									</button>
-									<p id="status"></p>
-									<a id="map-link" target="_blank"></a>
-								</div>
-								<a href="#" class="btn btn-primary mx-auto">Vyhledat</a>
+								</form>
 							</div>
 						</div>
-					</div>
-				</section>
-
-				<div class="map-wrapper">
-					<div class="map" id="map-canvas"></div>
-				</div>
-				<section class="partners-section">
-					<div class="container">
-						<h2 class="h2 text-center">Partneři</h2>
-						<ul class="partners-section__inner">
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-1.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-							<li>
-								<a href="#" class="partners-section__item">
-									<img src="images/content/partner-2.png" loading="lazy" alt="partner" />
-								</a>
-							</li>
-						</ul>
 					</div>
 				</section>
 			</main>

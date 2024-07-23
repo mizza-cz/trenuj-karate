@@ -1,4 +1,7 @@
 .o-content {
+  a {
+    color: var(--color-action-primary);
+  }
   &::after {
     display: table;
     clear: both;
@@ -9,6 +12,86 @@
   }
   > :last-child {
     margin-bottom: 0;
+  }
+  h1 {
+    margin-bottom: 32px;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  h4,
+  h5 {
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  p + p {
+    margin-top: 24px;
+  }
+  ul {
+    margin: 24px 0 24px;
+    li + li {
+      margin-top: 4px;
+    }
+    > li {
+      position: relative;
+      padding-left: 24px;
+      &::before {
+        content: "";
+        background-color: var(--color-primary);
+        position: absolute;
+        border-radius: 100%;
+        top: 6px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+      }
+      > ul {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  ol {
+    margin: 24px 0;
+    counter-reset: item;
+    li + li {
+      margin-top: 4px;
+    }
+    > li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 32px;
+      &::before {
+        content: counter(item) ".";
+        color: var(--color-primary);
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      > ol {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            content: counter(item) ".";
+          }
+        }
+      }
+    }
   }
 }
 
@@ -23,6 +106,7 @@
     line-height: 48px;
   }
 }
+.o-content h2,
 .h2 {
   font-size: 48px;
   font-weight: 600;
@@ -33,6 +117,29 @@
     line-height: 48px;
   }
 }
+.o-content h3,
+.h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+.o-content h4,
+.h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+.o-content h5,
 .h5 {
   font-size: 18px;
   font-weight: 600;
@@ -42,7 +149,10 @@
   font-size: 18px;
   line-height: 27px;
 }
-
+.p2 {
+  font-size: 16px;
+  line-height: 24px;
+}
 .p3 {
   font-size: 14px;
   line-height: 21px;
@@ -50,4 +160,10 @@
 .p4 {
   font-size: 12px;
   line-height: 18px;
+}
+
+.perex {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
 }

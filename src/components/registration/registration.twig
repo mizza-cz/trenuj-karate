@@ -1,0 +1,258 @@
+<section class="registration">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-10 mx-auto">
+        <h1 class="h1">Registrace klubu</h1>
+        <form class="registration__form">
+          <div class="registration__item">
+            <input
+              name="team"
+              type="text"
+              placeholder="Název klubu"
+              class="registration__input"
+              id="team"
+            />
+            <label for="team" class="registration__label">Název klubu</label>
+          </div>
+          <div class="registration__item registration__item--small">
+            <input
+              type="file"
+              accept="image/jpg, image/png, image/svg"
+              placeholder="Logo klubu (svg, png)"
+              class="registration__input"
+              id="file-upload"
+            />
+            <label for="file-upload" class="custom-file-upload">
+              {% include "@images/download.svg" %} Logo klubu (svg, png)</label
+            >
+          </div>
+          <div class="registration__item">
+            <input
+              name="address"
+              type="text"
+              placeholder="Adresa"
+              class="registration__input"
+              id="address"
+            />
+            <label for="address" class="registration__label">Adresa</label>
+          </div>
+          <div class="registration__item">
+            <input
+              name="ico"
+              type="text"
+              placeholder="IČO"
+              class="registration__input"
+              id="ico"
+            />
+            <label for="ico" class="registration__label">IČO</label>
+          </div>
+
+          <h2 class="h5">Klub</h2>
+          <div class="registration__club">
+            <div class="registration__item">
+              <input
+                name="web"
+                type="text"
+                placeholder="Web"
+                class="registration__input"
+                id="web"
+              />
+              <label for="web" class="registration__label">Web</label>
+            </div>
+            <div class="registration__item">
+              <input
+                name="instagram"
+                type="text"
+                placeholder="Instagram"
+                class="registration__input"
+                id="instagram"
+              />
+              <label for="instagram" class="registration__label"
+                >Instagram</label
+              >
+            </div>
+            <div class="registration__item">
+              <input
+                name="youtube"
+                type="text"
+                placeholder="Youtube"
+                class="registration__input"
+                id="youtube"
+              />
+              <label for="youtube" class="registration__label">Youtube</label>
+            </div>
+            <div class="registration__item">
+              <input
+                name="facebook"
+                type="text"
+                placeholder="Facebook"
+                class="registration__input"
+                id="facebook"
+              />
+              <label for="facebook" class="registration__label">Facebook</label>
+            </div>
+            <a href="javascript:void(0);" id="socialButton" class="addButton"
+              >{% include "@images/add.svg" %} Přidat další sociální síť</a
+            >
+          </div>
+
+          <h3 class="h5">Tréninky</h3>
+          <div class="registration__training">
+            <div class="registration__item">
+              <input
+                name="trainingPlace"
+                type="text"
+                placeholder="Místo tréninků"
+                class="registration__input"
+                id="trainingPlace"
+              />
+              <label for="trainingPlace" class="registration__label"
+                >Místo tréninků</label
+              >
+            </div>
+            <div class="registration__item">
+              <input
+                name="trainingTime"
+                type="text"
+                placeholder="Časy tréninků"
+                class="registration__input"
+                id="trainingTime"
+              />
+              <label for="trainingTime" class="registration__label"
+                >Časy tréninků</label
+              >
+            </div>
+            <div class="registration__item">
+              <input
+                name="trainingInfo"
+                type="text"
+                placeholder="Další informace o trénincích"
+                class="registration__input"
+                id="trainingInfo"
+              />
+              <label for="trainingInfo" class="registration__label"
+                >Další informace o trénincích</label
+              >
+            </div>
+            <p class="ps-4 mb-2 d-block">Pro koho jsou tréninky určené</p>
+            <ul class="registration__check">
+              <li class="">
+                <label class="label--checkbox">
+                  <input
+                    name="youth"
+                    type="checkbox"
+                    class="registration__checkbox"
+                  />
+                  Mládež
+                </label>
+              </li>
+              <li class="">
+                <label class="label--checkbox">
+                  <input
+                    name="adults"
+                    type="checkbox"
+                    class="registration__checkbox"
+                  />
+                  Dospělí
+                </label>
+              </li>
+              <li class="">
+                <label class="label--checkbox">
+                  <input
+                    name="seniors"
+                    type="checkbox"
+                    class="registration__checkbox"
+                  />
+                  Senioři
+                </label>
+              </li>
+            </ul>
+            <a href="javascript:void(0);" id="clubButton" class="addButton"
+              >{% include "@images/add.svg" %} Přidat další místo a časy
+              tréninků</a
+            >
+          </div>
+          <h4 class="h5">Konktaktní osoba</h4>
+          <div class="registration__contacts">
+            <div class="registration__item">
+              <input
+                name="name"
+                type="text"
+                placeholder="Jméno"
+                class="registration__input"
+                id="name"
+              />
+              <label for="name" class="registration__label">Jméno</label>
+            </div>
+            <div class="registration__item">
+              <input
+                name="surname"
+                type="text"
+                placeholder="Příjmení"
+                class="registration__input"
+                id="surname"
+              />
+              <label for="surname" class="registration__label">Příjmení</label>
+            </div>
+            <div class="registration__item">
+              <input
+                name="position"
+                type="text"
+                placeholder="Pozice"
+                class="registration__input"
+                id="postition"
+              />
+              <label for="postition" class="registration__label">Pozice</label>
+            </div>
+            <div class="registration__item registration__item--small">
+              <input
+                name="tel"
+                type="tel"
+                placeholder="Telefonní číslo"
+                class="registration__input"
+                id="telephon"
+              />
+              <label for="telephon" class="registration__label"
+                >Telefonní číslo</label
+              >
+            </div>
+            <div class="registration__item registration__item--small">
+              <input
+                name="mail"
+                type="email"
+                placeholder="Email"
+                class="registration__input"
+                id="mail"
+              />
+              <label for="mail" class="registration__label">Email</label>
+            </div>
+
+            <a href="javascript:void(0);" id="contactsButton" class="addButton"
+              >{% include "@images/add.svg" %} Přidat kontaktní osobu</a
+            >
+          </div>
+
+          <div class="registration__agreement">
+            <label class="label--checkbox">
+              <input
+                name="agreement"
+                required
+                type="checkbox"
+                class="registration__checkbox"
+              />
+              Souhlasím se zpracováním osobních údajů
+            </label>
+          </div>
+          <button
+            name="submit"
+            id="button-send"
+            disabled
+            class="btn btn-primary"
+          >
+            Odeslat
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

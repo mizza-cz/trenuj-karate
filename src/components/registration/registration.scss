@@ -1,0 +1,237 @@
+.registration {
+  padding-top: 48px;
+  margin-bottom: 120px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 56px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .custom-file-upload {
+    height: 56px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    border: 1px solid var(--color-gray);
+    border-radius: 16px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .h5 {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 32px;
+    }
+  }
+  .h1 {
+    margin-bottom: 56px;
+  }
+  &__form {
+    max-width: 496px;
+    width: 100%;
+  }
+  &__item {
+    width: 100%;
+    margin-bottom: 18px;
+    height: 56px;
+  }
+  &__item--small {
+    max-width: 295px;
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+  }
+  &__label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--color-primary);
+    transform: translate(1.25rem, -2.3rem);
+    transform-origin: 0 0;
+    transition: all 500ms;
+    position: relative;
+    z-index: 2;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    pointer-events: none;
+    width: fit-content;
+    padding: 0 2px;
+  }
+  &__input {
+    height: 56px;
+    width: 100%;
+    padding: 0 16px;
+    border: 1px solid var(--color-gray);
+    border-radius: 16px;
+    display: block;
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-primary);
+    &:focus {
+      outline: none;
+    }
+    &:focus + .registration__label,
+    &:not(:placeholder-shown) + .registration__label {
+      transform: translateY(-4.1rem) translateX(18px) scale(1);
+    }
+    &::placeholder {
+      display: none;
+      color: transparent;
+
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+    }
+  }
+  &__check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    li {
+      border: 1px solid var(--color-gray);
+      border-radius: 16px;
+      height: 45px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__agreement {
+    margin: 56px 0;
+  }
+  .btn {
+    max-width: 100%;
+  }
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--color-action-primary);
+  width: fit-content;
+  text-decoration-color: transparent;
+  margin: 20px 0;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.label--checkbox {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--color-primary);
+  letter-spacing: 0.25px;
+}
+
+.registration__checkbox {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 0;
+  height: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid var(--color-gray);
+  &:before {
+    transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    transform: rotate(-45deg) scale(0, 0);
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    z-index: 1;
+
+    width: 12px;
+    height: 6px;
+
+    border: 2px solid var(--color-primary);
+    border-top-style: none;
+    border-right-style: none;
+  }
+
+  &:checked {
+    &:before {
+      transform: rotate(-45deg) scale(1, 1);
+    }
+    &::after {
+      border: 1px solid var(--color-primary);
+    }
+  }
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    width: 1rem;
+    height: 1rem;
+
+    background: #fff;
+
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--color-gray);
+  }
+}
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
+  background-color: #d8d4d7;
+  border: 1px solid #d8d4d7;
+}
+
+.registrationDone {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 20px;
+  @include media-breakpoint-down(lg) {
+    max-width: 360px;
+  }
+  .h1 {
+    margin-bottom: 32px;
+  }
+  .p1 {
+    margin-bottom: 80px;
+  }
+  .btn {
+    max-width: 496px;
+  }
+}

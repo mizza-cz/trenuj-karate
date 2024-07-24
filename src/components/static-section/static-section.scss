@@ -1,6 +1,8 @@
 .static-section {
   margin-top: 114px;
+  margin-bottom: 80px;
   @include media-breakpoint-down(lg) {
     margin-top: 60px;
+    margin-bottom: 40px;
   }
 }

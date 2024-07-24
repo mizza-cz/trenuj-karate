@@ -4,7 +4,6 @@
   align-items: center;
   height: auto;
   gap: 24px;
-
   &__link {
     display: flex;
     align-items: center;
@@ -12,9 +11,6 @@
     transition: all 0.3s;
     height: 24px;
     width: 24px;
-    &:hover {
-      transform: scale(1.1);
-    }
     path {
       transition: all 0.3s;
     }

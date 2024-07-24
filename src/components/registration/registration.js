@@ -28,7 +28,7 @@ $(document).ready(function () {
     2,
     "#clubButton",
     ".registration__training",
-    '<div class="registration__item"><input name="trainingPlace" type="text" placeholder="Místo tréninků" class="registration__input" /><label for="trainingPlace2" class="registration__label">Místo tréninků</label></div><div class="registration__item"><input name="trainingTime" type="text" placeholder="Časy tréninků" class="registration__input" /><label for="trainingTime2" class="registration__label">Časy tréninků</label></div>'
+    '<div class="registration__item"><input name="trainingPlace" type="text" placeholder="Místo tréninků" class="registration__input" /><label for="trainingPlace2" class="registration__label">Místo tréninků</label></div><div class="registration__item"><input name="trainingTime" type="text" placeholder="Časy tréninků" class="registration__input" /><label for="trainingTime2" class="registration__label">Časy tréninků</label></div>  <ul class="registration__check"><li class=""><label class="label--checkbox"><input name="youth" type="checkbox" class="registration__checkbox"/>Mládež</label></li><li class=""><label class="label--checkbox"><input name="adults" type="checkbox" class="registration__checkbox"/>Dospělí</label></li><li class=""><label class="label--checkbox"><input name="seniors" type="checkbox" class="registration__checkbox"/>Senioři</label></li></ul>'
   );
 
   addFields(

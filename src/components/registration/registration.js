@@ -73,22 +73,21 @@ $(document).ready(function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const fileUpload = document.getElementById("file-upload");
-  const imagePreview = document.getElementById("image-preview");
+const fileUpload = document.getElementById("file-upload");
+const imagePreview = document.getElementById("image-preview");
 
-  if (fileUpload) {
-    fileUpload.onchange = function () {
-      const file = fileUpload.files[0];
-      if (file) {
-        const img = document.createElement("img");
-        img.src = URL.createObjectURL(file);
-        img.alt = "Club Logo";
-        img.classList.add("club-logo");
+if (fileUpload) {
+  fileUpload.onchange = function () {
+    const file = fileUpload.files[0];
+    if (file) {
+      const img = document.createElement("img");
+      img.src = URL.createObjectURL(file);
+      img.alt = "Club Logo";
+      img.classList.add("club-logo");
 
-        imagePreview.innerHTML = "";
-        imagePreview.appendChild(img);
-      }
-    };
-  }
-});
+      // Clear any existing content in image preview
+      imagePreview.innerHTML = "";
+      imagePreview.appendChild(img);
+    }
+  };
+}

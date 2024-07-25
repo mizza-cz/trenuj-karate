@@ -27,28 +27,6 @@
               {% include "@images/download.svg" %} Logo klubu (svg, png)</label
             >
             <div id="image-preview"></div>
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                const fileUpload = document.getElementById("file-upload");
-                const imagePreview = document.getElementById("image-preview");
-
-                if (fileUpload) {
-                  fileUpload.onchange = function () {
-                    const file = fileUpload.files[0];
-                    if (file) {
-                      const img = document.createElement("img");
-                      img.src = URL.createObjectURL(file);
-                      img.alt = "Club Logo";
-                      img.classList.add("club-logo");
-
-                      // Clear any existing content in image preview
-                      imagePreview.innerHTML = "";
-                      imagePreview.appendChild(img);
-                    }
-                  };
-                }
-              });
-            </script>
           </div>
           <div class="registration__item">
             <input

@@ -99,13 +99,35 @@
 										<input name="team" type="text" placeholder="Název klubu" class="registration__input" id="team" />
 										<label for="team" class="registration__label">Název klubu</label>
 									</div>
+
 									<div class="registration__item registration__item--small">
-										<input type="file" accept="image/jpg, image/png, image/svg" placeholder="Logo klubu (svg, png)" class="registration__input" id="file-upload" />
+										<input type="file" accept="image/png, image/svg+xml" placeholder="Logo klubu (svg, png)" class="registration__input" id="file-upload" />
 										<label for="file-upload" class="custom-file-upload">
 											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 13l-3-3-3 3" stroke="#999191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M8 20H7a4 4 0 01-4-4V7a4 4 0 014-4h10a4 4 0 014 4v9a4 4 0 01-4 4h-1M12 10v11" stroke="#999191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 											</svg> Logo klubu (svg, png)</label>
+										<div id="image-preview"></div>
+										<script>
+											document.addEventListener("DOMContentLoaded", function() {
+												const fileUpload = document.getElementById("file-upload");
+												const imagePreview = document.getElementById("image-preview");
+												if (fileUpload) {
+													fileUpload.onchange = function() {
+														const file = fileUpload.files[0];
+														if (file) {
+															const img = document.createElement("img");
+															img.src = URL.createObjectURL(file);
+															img.alt = "Club Logo";
+															img.classList.add("club-logo");
+															// Clear any existing content in image preview
+															imagePreview.innerHTML = "";
+															imagePreview.appendChild(img);
+														}
+													};
+												}
+											});
+										</script>
 									</div>
 									<div class="registration__item">
 										<input name="address" type="text" placeholder="Adresa" class="registration__input" id="address" />
@@ -134,10 +156,6 @@
 											<input name="facebook" type="text" placeholder="Facebook" class="registration__input" id="facebook" />
 											<label for="facebook" class="registration__label">Facebook</label>
 										</div>
-										<a href="javascript:void(0);" id="socialButton" class="addButton"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M12 8v8M16 12H8" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												<path clip-rule="evenodd" d="M12 21v0a9 9 0 01-9-9v0a9 9 0 019-9v0a9 9 0 019 9v0a9 9 0 01-9 9z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											</svg> Přidat další sociální síť</a>
 									</div>
 
 									<h3 class="h5">Tréninky</h3>
@@ -150,8 +168,9 @@
 											<input name="trainingTime" type="text" placeholder="Časy tréninků" class="registration__input" id="trainingTime" />
 											<label for="trainingTime" class="registration__label">Časy tréninků</label>
 										</div>
-										<div class="registration__item">
-											<input name="trainingInfo" type="text" placeholder="Další informace o trénincích" class="registration__input" id="trainingInfo" />
+										<div class="registration__item registration__item--textarea">
+											<textarea class="registration__input" placeholder="Další informace o trénincích" name="trainingInfo" id="trainingInfo"></textarea>
+
 											<label for="trainingInfo" class="registration__label">Další informace o trénincích</label>
 										</div>
 										<p class="ps-4 mb-2 d-block">Pro koho jsou tréninky určené</p>

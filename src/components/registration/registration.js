@@ -18,13 +18,6 @@ $(document).ready(function () {
   }
 
   addFields(
-    3,
-    "#socialButton",
-    ".registration__club",
-    '<div class="registration__item"><input name="additionalSocial" type="text" class="registration__input" placeholder="Дополнительная социальная сеть" /></div>'
-  );
-
-  addFields(
     2,
     "#clubButton",
     ".registration__training",
@@ -71,4 +64,31 @@ $(document).ready(function () {
       buttonSend.disabled = !allTrue;
     });
   });
+});
+
+$(document).ready(function () {
+  $("#trainingInfo").on("input", function () {
+    this.style.height = "auto";
+    this.style.height = this.scrollHeight + "px";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fileUpload = document.getElementById("file-upload");
+  const imagePreview = document.getElementById("image-preview");
+
+  if (fileUpload) {
+    fileUpload.onchange = function () {
+      const file = fileUpload.files[0];
+      if (file) {
+        const img = document.createElement("img");
+        img.src = URL.createObjectURL(file);
+        img.alt = "Club Logo";
+        img.classList.add("club-logo");
+
+        imagePreview.innerHTML = "";
+        imagePreview.appendChild(img);
+      }
+    };
+  }
 });

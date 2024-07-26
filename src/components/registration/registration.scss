@@ -132,7 +132,16 @@
   color: var(--color-action-primary);
   width: fit-content;
   text-decoration-color: transparent;
+  background-color: transparent;
+  border: none;
   margin: 20px 0;
+  position: relative;
+  background-image: url("../images/ico/add.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center left;
+  padding-left: 32px;
+
   &:hover {
     text-decoration-color: inherit;
   }

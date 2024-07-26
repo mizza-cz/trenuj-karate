@@ -24,3 +24,13 @@ if (archInner) {
 
   showProd();
 }
+
+let closeBtn = document.querySelector(".homeSearch__close");
+let searchInput = document.getElementById("searchInput");
+
+if (searchInput && closeBtn) {
+  closeBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    searchInput.value = "";
+  });
+}

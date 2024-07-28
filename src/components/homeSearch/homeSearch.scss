@@ -47,17 +47,16 @@
       }
     }
   }
-  &__form {
-    margin-bottom: 32px;
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 24px;
-    }
-  }
+
   &__label {
     width: 100%;
     position: relative;
     height: 56px;
     display: block;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px;
+    }
     input {
       border: 1px solid var(--color-gray);
       border-radius: 12px;

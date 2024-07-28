@@ -11,15 +11,18 @@
             <button>{% include "@images/search.svg" %}</button>
             <input type="text" placeholder="Vyhledejte klub podle města.... " />
           </label>
-        </form>
-        <div class="homeSearch__location">
-          <button id="find-me">
-            {% include "@images/cursor.svg" %} Použít aktuální polohu
+
+          <div class="homeSearch__location">
+            <button id="find-me">
+              {% include "@images/cursor.svg" %} Použít aktuální polohu
+            </button>
+            <p id="status"></p>
+            <a id="map-link" target="_blank"></a>
+          </div>
+          <button type="submit" class="btn btn-primary mx-auto">
+            Vyhledat
           </button>
-          <p id="status"></p>
-          <a id="map-link" target="_blank"></a>
-        </div>
-        <a href="#" class="btn btn-primary mx-auto">Vyhledat</a>
+        </form>
       </div>
     </div>
   </div>

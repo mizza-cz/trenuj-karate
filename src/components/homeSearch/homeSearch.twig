@@ -8,21 +8,23 @@
         </h1>
         <form class="homeSearch__form">
           <label class="homeSearch__label">
-            <button>{% include "@images/search.svg" %}</button>
-            <input type="text" placeholder="Vyhledejte klub podle města.... " />
+            <button type="button">{% include "@images/search.svg" %}</button>
+            <input type="text" id="search-input" placeholder="Vyhledejte klub podle města...." />
           </label>
-
+        
           <div class="homeSearch__location">
-            <button id="find-me">
+            <button id="find-me" type="button">
               {% include "@images/cursor.svg" %} Použít aktuální polohu
             </button>
             <p id="status"></p>
             <a id="map-link" target="_blank"></a>
           </div>
+        
           <button type="submit" class="btn btn-primary mx-auto">
             Vyhledat
           </button>
         </form>
+        
       </div>
     </div>
   </div>

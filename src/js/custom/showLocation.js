@@ -1,38 +1,34 @@
-function geoFindMe() {
-  const status = document.querySelector("#status");
-  const mapLink = document.querySelector("#map-link");
-
-  // Check if mapLink exists
-  if (!mapLink) {
-    return; // If map-link element does not exist, exit function
-  }
-
-  mapLink.href = "";
-  mapLink.textContent = "";
+document.getElementById("find-me").addEventListener("click", function () {
+  const status = document.getElementById("status");
+  const input = document.getElementById("search-input");
 
   function success(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
-    status.textContent = "";
-    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+    // Vytvoření URL pro reverzní geokódování pomocí nějakého API (např. OpenStreetMap Nominatim)
+    const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`;
+
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        const address = data.display_name; // Adresa z API
+        input.value = address; // Vložení adresy do inputu
+        status.textContent = "Adresa byla úspěšně nalezena.";
+      })
+      .catch(() => {
+        status.textContent = "Nepodařilo se získat adresu.";
+      });
   }
 
   function error() {
-    status.textContent = "Nelze načíst vaši polohu";
+    status.textContent = "Nelze získat polohu.";
   }
 
   if (!navigator.geolocation) {
-    status.textContent = "Geolokace není vaším prohlížečem podporován";
+    status.textContent = "Geolokace není podporována vaším prohlížečem.";
   } else {
-    status.textContent = "Vyhledávání…";
+    status.textContent = "Vyhledávání polohy…";
     navigator.geolocation.getCurrentPosition(success, error);
   }
-}
-
-// Check if the #find-me element exists
-const findMeButton = document.querySelector("#find-me");
-if (findMeButton) {
-  findMeButton.addEventListener("click", geoFindMe);
-}
+});

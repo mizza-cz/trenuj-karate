@@ -99,14 +99,14 @@
 								</h1>
 								<form class="homeSearch__form">
 									<label class="homeSearch__label">
-										<button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<button type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M14.15 14.06L20 19.99M14.193 5.582a5.971 5.971 0 11-8.444 8.444 5.971 5.971 0 018.444-8.444z" stroke="#B7AEAE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 											</svg></button>
-										<input type="text" placeholder="Vyhledejte klub podle města.... " />
+										<input type="text" id="search-input" placeholder="Vyhledejte klub podle města...." />
 									</label>
 
 									<div class="homeSearch__location">
-										<button id="find-me">
+										<button id="find-me" type="button">
 											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path clip-rule="evenodd" d="M13.482 13.482l-1.145 2.863a.591.591 0 01-1.105-.018L8.753 9.511a.591.591 0 01.758-.758l6.816 2.478c.51.186.522.903.018 1.105l-2.863 1.146z" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<circle cx="12" cy="12" r="9" stroke="#00308C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -115,10 +115,12 @@
 										<p id="status"></p>
 										<a id="map-link" target="_blank"></a>
 									</div>
+
 									<button type="submit" class="btn btn-primary mx-auto">
 										Vyhledat
 									</button>
 								</form>
+
 							</div>
 						</div>
 					</div>

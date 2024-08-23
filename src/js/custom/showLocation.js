@@ -12,8 +12,20 @@ document.getElementById("find-me").addEventListener("click", function () {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
-        const address = data.display_name; // Adresa z API
-        input.value = address; // Vložení adresy do inputu
+        const addressDetails = data.address;
+        // Získání konkrétních částí adresy
+        const street = addressDetails.road || "";
+        const houseNumber = addressDetails.house_number || "";
+        const city =
+          addressDetails.city ||
+          addressDetails.town ||
+          addressDetails.village ||
+          "";
+
+        // Kombinace těchto částí do jednoho řetězce
+        const formattedAddress = `${street} ${houseNumber}, ${city}`;
+
+        input.value = formattedAddress; // Vložení upravené adresy do inputu
         status.textContent = "Adresa byla úspěšně nalezena.";
       })
       .catch(() => {

@@ -91,3 +91,19 @@ if (fileUpload) {
     }
   };
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const gpsInputs = document.querySelectorAll(".js-gps");
+
+  gpsInputs.forEach((input) => {
+    // Удаляет нежелательные символы при вводе
+    input.addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9.]/g, ""); // Удаляет все символы, кроме цифр и точки
+    });
+
+    // Удаляет нежелательные символы при потере фокуса
+    input.addEventListener("blur", function () {
+      this.value = this.value.replace(/[^0-9.]/g, ""); // Удаляет все символы, кроме цифр и точки
+    });
+  });
+});

@@ -1,14 +1,7 @@
 .homeSearch {
-  height: calc(100vh - 65.5px);
   position: relative;
-  padding-top: 12%;
   overflow: hidden;
-  @include media-breakpoint-down(lg) {
-    padding-top: 120px;
-    height: auto;
-    padding-bottom: 120px;
-  }
-
+  padding: 100px 0;
   &__box {
     height: fit-content;
   }

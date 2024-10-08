@@ -1,7 +1,7 @@
 .homeSearch {
   position: relative;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 60px 0 40px;
   &__box {
     height: fit-content;
   }
@@ -12,9 +12,12 @@
       max-width: 360px;
     }
     .h1 {
-      margin-bottom: 64px;
+      margin-bottom: 40px;
+      font-size: 3rem;
+      line-height: normal;
       @include media-breakpoint-down(lg) {
-        margin-bottom: 54px;
+        margin-bottom: 32px;
+        font-size: 32px;
       }
     }
   }

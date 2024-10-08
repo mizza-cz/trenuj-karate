@@ -3,15 +3,19 @@
     <div class="homeSearch__inner">
       <div class="homeSearch__box">
         <h1 class="h1 text-center">
-          Vyhledejte klub pro <span class="text-red">začátečníky</span> ve vašem
-          okolí
+          Vyhledejte klub pro <span class="text-red">začátečníky</span> <br />ve
+          vašem okolí
         </h1>
         <form class="homeSearch__form">
           <label class="homeSearch__label">
             <button type="button">{% include "@images/search.svg" %}</button>
-            <input type="text" id="search-input" placeholder="Vyhledejte klub podle města...." />
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Vyhledejte klub podle města...."
+            />
           </label>
-        
+
           <div class="homeSearch__location">
             <button id="find-me" type="button">
               {% include "@images/cursor.svg" %} Použít aktuální polohu
@@ -19,12 +23,11 @@
             <p id="status"></p>
             <a id="map-link" target="_blank"></a>
           </div>
-        
+
           <button type="submit" class="btn btn-primary mx-auto">
             Vyhledat
           </button>
         </form>
-        
       </div>
     </div>
   </div>

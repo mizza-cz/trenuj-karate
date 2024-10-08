@@ -12,12 +12,16 @@
     width: 670px;
     height: 960px;
 
-    @include media-breakpoint-down(xxl) {
+    @include media-breakpoint-only(xl) {
       width: 35rem;
+    }
+    @include media-breakpoint-only(lg) {
+      width: 28rem;
     }
     @include media-breakpoint-down(lg) {
       height: 46rem;
       right: -19rem;
+      width: 35rem;
     }
   }
 }
